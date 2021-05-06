@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" 
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	
+	<persistence-unit name="XtraClassPU" transaction-type="JTA">
+		<jta-data-source>java:/XtraClassDS</jta-data-source>
+		<class>pe.edu.upc.XtraClass.models.entities.Alumno</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Asunto</class>
+		<class>pe.edu.upc.XtraClass.models.entities.CalificacionDocente</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Docente</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Foro</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Incidencia</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Materia</class>
+		<class>pe.edu.upc.XtraClass.models.entities.MateriaProfesor</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Pago</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Perfil</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Persona</class>
+		<class>pe.edu.upc.XtraClass.models.entities.ReservaClase</class>
+		<class>pe.edu.upc.XtraClass.models.entities.Tarjeta</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		</properties>
+	</persistence-unit>
+</persistence>
+
+
